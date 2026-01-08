@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EvelinPastry.com</title>
+    <title>Cart — EvelinPastry</title>
     <link rel="stylesheet" href="pastry.css">
+    <style>
+        /* Home button placed under the main card */
+        .home-under{
+            display:inline-block;
+            margin:12px auto 0;
+            background:#111;
+            color:#fff;
+            padding:10px 14px;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:700;
+            text-align:center;
+        }
+        .home-under-wrapper{display:flex;justify-content:center;margin-top:12px}
+    </style>
 </head>
-
 <body>
     <header>
         <div class="header-inner">
@@ -32,22 +45,30 @@
             </div>
         </div>
     </header>
+
     <div class="middle">
         <div class="middle-container">
             <main class="main-panel">
-                <section class="hero">
-                    <div class="hero-actions">
-                        <a href="shop.html" class="btn-primary">Shop</a>
-                        <a href="account.html" class="btn-ghost">Account</a>
+                <div class="card">
+                    <h2>Your Shopping Cart</h2>
+                    <p class="card-sub">Items in cart: <strong id="cart-count">0</strong></p>
+
+                    <div class="cart-empty" style="text-align:center;padding:28px 0">
+                        <p class="cart-empty-text" style="margin:0 0 12px 0;color:var(--muted)">Your cart is currently empty.</p>
+                        <a href="shop.html" class="start-shopping">Start Shopping</a>
                     </div>
-                </section>
+                </div>
+                <div class="home-under-wrapper">
+                    <a href="index.html" class="home-under">Home</a>
+                </div>
             </main>
         </div>
 
         
+
         <footer>
             Copyright 2025-2025 by filip. All rights reserved. This site is powered by pure agony.
         </footer>
+    </div>
 </body>
-
 </html>
