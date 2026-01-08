@@ -130,13 +130,6 @@ header {
         align-items:center
     }
 
-    .cta{
-        display:inline-block;
-        color:#fff;
-        padding:10px 14px;
-        border-radius:6px;
-        font-weight:700;
-    }
 
     .muted-link {
         color:var(--muted);
@@ -317,5 +310,31 @@ header {
             margin-top:12px
         }
 
-   
+    .main-shop {
+        box-sizing: border-box;
+        padding-top: 92px; 
+        padding-bottom: 80px; 
+        background: #f8f7f5;
+    }
+    .main-shop .shop-cards {
+        display: block;
+    }
+    .main-shop .product-card {
+        max-width: none;
+        width: calc(100% - 32px);
+        margin: 12px 16px;
+        box-sizing: border-box;
+        
+    }
+
+    .cta{
+        display:inline-block;
+        color:#000000;
+        padding:10px 14px;
+        border-radius:6px;
+        font-weight:700;
+    }
+
     
+
+
